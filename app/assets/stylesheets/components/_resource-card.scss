@@ -1,0 +1,47 @@
+.resource-card {
+  display: flex;
+  align-items: center;
+}
+
+.resource-img {
+  width: 400px;
+  z-index: 2;
+  transition: .3s;
+}
+
+.resource-link {
+  z-index: 3;
+}
+
+.resource-card:hover .resource-img {
+  transform: scale(1.05);
+}
+
+.resource-info-box {
+  background-color: white;
+  border: 1px solid rgba(0,0,0,0.1);
+  flex: 1 1 auto;
+  padding: 10px 20px 10px 50px;
+  position: relative;
+  right: 40px;
+  z-index: 1;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 3px;
+}
+
+.resource-info {
+
+  h3 {
+    color: $brand-primary;
+    margin-top: 0;
+  }
+}
+
+.resource-searches {
+  p {
+    margin: 0;
+  }
+}

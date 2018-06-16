@@ -4,11 +4,11 @@ class Category < ApplicationRecord
 
   def section_title
     case self.name
-    when "inspiration" then "Find inspiration!"
-    when "colors" then "Find the right colors!"
-    when "icons" then "Find awesome icons!"
-    when "fonts" then "Find good fonts!"
-    when "images" then "Find beautiful images!"
+    when "inspiration" then "Find <strong>inspiration</strong>!"
+    when "colors" then "Find the right <strong>colors</strong>!"
+    when "icons" then "Find awesome <strong>icons</strong>!"
+    when "fonts" then "Find good <strong>fonts</strong>!"
+    when "images" then "Find beautiful <strong>images</strong>!"
     when "articles" then "Stay up to date!"
     end
   end

@@ -5,5 +5,8 @@
   <%= f.association :category %>
   <%= f.input :photo %>
   <%= f.input :photo_cache, as: :hidden %>
+  <%= f.simple_fields_for :searches do |t| %>
+    <%= t.input :name %>
+  <% end %>
   <%= f.submit "Create", class: "btn btn-primary"  %>
 <% end %>
