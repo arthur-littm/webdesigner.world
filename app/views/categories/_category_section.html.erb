@@ -8,7 +8,7 @@
           <%= cl_image_tag resource.photo, class: "resource-img" %>
         <% end %>
       <% end %>
-      <div class="resource-info-box">
+      <div class="resource-info-box hidden-xs hidden-sm">
         <div class="resource-info">
           <h3><%= link_to resource.name, resource.url %></h3>
           <p><%= resource.description %></p>
