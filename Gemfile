@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 ruby '2.4.4'
 
+gem 'activeadmin', github: 'activeadmin/activeadmin'
+gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 gem 'cloudinary'
 gem 'carrierwave', '~> 1.2'
 gem 'bootsnap', require: false
