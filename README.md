@@ -1,6 +1,6 @@
 # Noobesign.xyz 
 
-### A curated list of web design noobie resources
+### A curated list of web design resources
 
 [Website](http://www.noobesign.xyz/)
 
