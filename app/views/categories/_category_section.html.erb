@@ -1,4 +1,5 @@
-<div id="<%= category.name %>" class="category-section">
+<hr class="separator" id="<%= category.name %>">
+<div class="category-section">
   <h2><%= category.section_title.html_safe %></h2>
   <p><%= category.description %></p>
   <% category.resources.each do |resource| %>
@@ -29,5 +30,4 @@
       </div>
     </div>
   <% end %>
-  <hr class="separator">
 </div>
