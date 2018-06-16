@@ -1,0 +1,11 @@
+<div id="<%= category.name %>">
+  <h2><%= category.section_title %></h2>
+  <ul>
+    <% category.resources.each do |resource| %>
+      <li><%= resource.name %></li>
+      <% if resource.photo? %>
+        <%= cl_image_tag resource.photo, width: 400 %>
+      <% end %>
+    <% end %>
+  </ul>
+</div>

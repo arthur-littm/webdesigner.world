@@ -10,10 +10,36 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_06_16_144724) do
+ActiveRecord::Schema.define(version: 2018_06_16_160730) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "categories", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "description"
+  end
+
+  create_table "common_searches", force: :cascade do |t|
+    t.string "text"
+    t.bigint "resource_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["resource_id"], name: "index_common_searches_on_resource_id"
+  end
+
+  create_table "resources", force: :cascade do |t|
+    t.string "name"
+    t.string "url"
+    t.string "description"
+    t.bigint "category_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "photo"
+    t.index ["category_id"], name: "index_resources_on_category_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -32,4 +58,6 @@ ActiveRecord::Schema.define(version: 2018_06_16_144724) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "common_searches", "resources"
+  add_foreign_key "resources", "categories"
 end
