@@ -1,6 +1,25 @@
-<% if user_signed_in? %>
-  <%= link_to('logout', destroy_user_session_path, method: :delete) %>
-  <%= link_to "new resource", new_resource_path %>
-<% else %>
-  <%= link_to('login', new_user_session_path) %>
-<% end %>
+<div class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-left">
+        <% if user_signed_in? %>
+          <%= link_to destroy_user_session_path, method: :delete do %>
+            <i class="fas fa-sign-out-alt"></i>
+          <% end %>
+          <%= link_to new_resource_path do %>
+            <i class="fas fa-plus"></i>
+          <% end %>
+        <% else %>
+          <%= link_to new_user_session_path do %>
+            <i class="fas fa-sign-in-alt"></i>
+          <% end %>
+        <% end %>
+        <a href="https://github.com/arthur-littm" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:arthur.littmann@gmail.com"><i class="fa fa-envelope"></i></a>
+      </div>
+      <div class="footer-right hidden-xs">
+        <span>Made by <a href="https://www.arthur-littm.com/">Arthur Littmann</a>.</span>
+      </div>
+    </div>
+  </div>
+</div>

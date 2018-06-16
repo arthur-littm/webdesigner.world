@@ -1,5 +1,5 @@
 class Category < ApplicationRecord
-  has_many :resources
+  has_many :resources, dependent: :destroy
   categories = ["inspiration", "colors", "icons", "fonts", "images", "articles"]
 
   def section_title

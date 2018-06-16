@@ -13,7 +13,7 @@ $font-size-base: 18px;
 // Colors
 $brand-primary:   #62D576;
 $darker-primary:   #4EA75E;
-
+$dark-gray: $text-color;
 // Buttons & inputs' radius
 $border-radius-base:  2px;
 $border-radius-large: 2px;
@@ -49,6 +49,7 @@ $border-radius-small: 2px;
 
 .padded-top {
   padding-top: 100px;
+  min-height: calc(100vh - 70px);
 }
 
 // Override other variables below!
