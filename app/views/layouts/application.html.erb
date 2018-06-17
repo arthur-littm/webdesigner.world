@@ -3,12 +3,29 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Noobesign - The web design noobie resources</title>
+    <title>Noobesign - Curated list of web design resources</title>
+    <meta name="description" content="I'm not saying these tools are for noobs, this is just a collection of awesome resources that I found useful when I first started web design, and I still use them today!">
+
+    <!-- Facebook Open Graph data -->
+    <meta property="og:title" content="Noobesign - Curated list of web design resources" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="<%= request.original_url %>" />
+    <meta property="og:image" content="<%= image_url "meta.png" %>" />
+    <meta property="og:description" content="I'm not saying these tools are for noobs, this is just a collection of awesome resources that I found useful when I first started web design, and I still use them today!" />
+    <meta property="og:site_name" content="Noobesign" />
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="Noobesign">
+    <meta name="twitter:title" content="Noobesign - Curated list of web design resources">
+    <meta name="twitter:description" content="I'm not saying these tools are for noobs, this is just a collection of awesome resources that I found useful when I first started web design, and I still use them today!">
+    <meta name="twitter:creator" content="Noobesign">
+    <meta name="twitter:image:src" content="<%= image_url "meta.png" %>">
+
     <%= csrf_meta_tags %>
     <%= favicon_link_tag 'favicon.png' %>
     <%= action_cable_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all' %>
-    <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
   <body>
     <%= render 'shared/navbar' %>
