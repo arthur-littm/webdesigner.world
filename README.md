@@ -1,4 +1,4 @@
-# Noobesign.xyz 
+# WebDesigner.world 
 
 ### A curated list of web design resources
 
