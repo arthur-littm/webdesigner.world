@@ -2,7 +2,7 @@
 
 ### A curated list of web design resources
 
-[Website](http://www.noobesign.xyz/)
+[Website](http://www.webdesigner.world/)
 
 ![alt text](https://github.com/arthur-littm/noobesign/blob/master/app/assets/images/screenshot.png)
 
