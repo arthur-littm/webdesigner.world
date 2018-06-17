@@ -15,7 +15,7 @@
   <!-- Dropdown list appearing on mobile only -->
   <div class="noobar-right hidden-md hidden-lg">
     <div class="dropdown">
-      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
         <% Category.order(position: :asc).each do |c| %>
           <li>
