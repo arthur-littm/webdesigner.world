@@ -19,12 +19,7 @@
         </div>
         <div class="resource-searches">
           <% if resource.common_searches.any? %>
-            <p>
-              <strong>I commonly search:</strong>
-              <% resource.common_searches.each do |search| %>
-                <code><%= search.text %></code>,
-              <% end %>
-            </p>
+            <p><strong>I commonly search: </strong> <%= resource.list_common_searches.html_safe %></p>
           <% end %>
         </div>
       </div>
