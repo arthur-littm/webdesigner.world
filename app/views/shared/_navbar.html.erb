@@ -8,7 +8,7 @@
   <div class="noobar-right hidden-xs hidden-sm">
     <!-- Links when logged in -->
     <% Category.all.each do |c| %>
-      <%= link_to c.name, "##{c.name}", class: "noobar-link" %>
+      <%= link_to c.name, "##{c.name}", class: "noobar-link", data: { scroll: "" } %>
     <% end %>
   </div>
 
@@ -19,7 +19,7 @@
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
         <% Category.all.each do |c| %>
           <li>
-            <%= link_to c.name, "##{c.name}" %>
+            <%= link_to c.name, "##{c.name}", data: { scroll: "" } %>
           </li>
         <% end %>
       </ul>
