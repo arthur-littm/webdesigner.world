@@ -1,7 +1,7 @@
 <hr class="separator" id="<%= category.name %>">
 <div class="category-section">
   <h2><%= category.section_title.html_safe %></h2>
-  <p><%= category.description %></p>
+  <p><%= category.description.html_safe %></p>
   <% category.resources.each do |resource| %>
     <div class="resource-card">
       <%= link_to resource.url, class: "resource-link", target: "_blank" do %>
