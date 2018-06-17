@@ -10,7 +10,7 @@ class Category < ApplicationRecord
     when "fonts" then "Step 3 - pick good <strong>fonts</strong>!"
     when "icons" then "Step 4 - add some awesome <strong>icons</strong>!"
     when "images" then "Step 5 - find beautiful <strong>images</strong>!"
-    when "articles" then "Finally, stay up to date!"
+    when "news" then "Finally, stay up-to-date on design trends!"
     else
       self.name
     end

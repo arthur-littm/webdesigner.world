@@ -7,7 +7,7 @@
   <!-- Right Navigation -->
   <div class="noobar-right hidden-xs hidden-sm">
     <!-- Links when logged in -->
-    <% Category.all.each do |c| %>
+    <% Category.order(position: :asc).each do |c| %>
       <%= link_to c.name, "##{c.name}", class: "noobar-link", data: { scroll: "" } %>
     <% end %>
   </div>
@@ -17,7 +17,7 @@
     <div class="dropdown">
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-        <% Category.all.each do |c| %>
+        <% Category.order(position: :asc).each do |c| %>
           <li>
             <%= link_to c.name, "##{c.name}", data: { scroll: "" } %>
           </li>
