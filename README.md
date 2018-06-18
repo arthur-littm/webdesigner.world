@@ -1,4 +1,4 @@
-# WebDesigner.world 
+# Web Designer World 
 
 ### A curated list of web design resources
 
