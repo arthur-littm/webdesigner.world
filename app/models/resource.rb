@@ -2,7 +2,7 @@ class Resource < ApplicationRecord
   mount_uploader :photo, PhotoUploader
 
   belongs_to :category
-  has_many :common_searches
+  has_many :common_searches, dependent: :destroy
 
   def list_common_searches
     if common_searches.count > 1
