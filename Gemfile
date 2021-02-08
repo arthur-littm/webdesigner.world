@@ -4,7 +4,7 @@ ruby '2.5.5'
 gem 'activeadmin', github: 'activeadmin/activeadmin'
 gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 gem 'cloudinary'
-gem 'carrierwave', '~> 1.2'
+gem 'carrierwave', '~> 2.1'
 gem 'bootsnap', require: false
 gem 'devise'
 gem 'figaro'
